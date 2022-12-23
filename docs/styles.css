@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #E5FFEE;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dongle', sans-serif;
+    background-color: var(--bg-color);
+    height: 100%;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper {
+    position: relative;
+}
+
+.card {
+    border-radius: 28px;
+    overflow: hidden;
+    margin: auto;
+    height: 80vh;
+    width: 360px;
+    background-color: #3D995C;
+}
+
+.card-hidden {
+    height: 80vh;
+    width: 360px;
+    background-color: var(--bg-color);
+    position: absolute;
+    z-index: 1;
+    left: -100%;
+
+    animation-name: slide-hidden;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes slide-hidden {
+    0% {
+        left: -100%;
+    }
+
+    50% {
+        left: -100%;
+    }
+
+    100% {
+        left: -130%;
+    }
+}
+
+.card-kv img {
+    width: 480px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-name: slide;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes slide {
+    0% {
+        left: -30%;
+    }
+
+    50% {
+        left: 0%;
+    }
+
+    100% {
+        left: 30%;
+    }
+}
+
+.card-text {
+    font-size: 4rem;
+    margin-top: auto;
+    line-height: 0.7;
+}
+
+.card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
