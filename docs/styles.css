@@ -2,10 +2,20 @@
 
 :root {
     --bg-color: #E5FFEE;
+    --bg-card: #3d995c;
 }
 
 * {
     box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+body.step-2 {
+    --bg-color: #FFE5E5;
+    --bg-card: #E55050;
 }
 
 body {
@@ -33,7 +43,10 @@ body {
     margin: auto;
     height: 80vh;
     width: 360px;
-    background-color: #3D995C;
+    background-color: var(--bg-card);
+
+    display: flex;
+    flex-direction: column;
 }
 
 .card-hidden {
@@ -102,4 +115,37 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+}
+
+.card-footer {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 0;
+    border: none;
+}
+
+.btn.rounded {
+    width: 10px;
+    height: 10px;
+}
+
+.btn-slide .btn{
+    margin-right: 8px;
+}
+
+.btn.active {
+    width: 25px;
+    background-color: #fac355;
+}
+
+.btn-next {
+    padding: 0 0.5rem;
+    margin-right: 1rem;
+    color: var(--bg-card);
 }

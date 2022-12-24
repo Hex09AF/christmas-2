@@ -16,7 +16,7 @@
     <script defer src="script.js"></script>
 </head>
 
-<body>
+<body class="step-2" id="root">
     <div class="container">
         <div class="card-wrapper">
             <div class="card-hidden"></div>
@@ -31,7 +31,12 @@
                     </div>
                 </div>
                 <div class="card-footer">
-
+                    <div class="btn-slide">
+                        <button class="btn rounded" type="button"></button>
+                        <button class="btn active rounded" type="button"></button>
+                        <button class="btn rounded" type="button"></button>
+                    </div>
+                    <button class="btn btn-next" id="btn-next" type="button">Next</button>
                 </div>
             </div>
         </div>
