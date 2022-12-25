@@ -9,32 +9,36 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
 </head>
 
-<body class="step-2" id="root">
+<body id="root">
     <div class="container">
         <div class="card-wrapper">
             <div class="card-hidden"></div>
             <div class="card">
                 <div class="card-body">
                     <div class="card-kv">
-                        <img src="./images/santa-sleds.png" alt="santa sleds with deer" />
+                        <img class="image-kv step-1" src="./images/santa-sleds.png" alt="santa sleds with deer" />
+                        <img class="image-kv step-2" src="./images/two-hands.png" alt="two hands with gift" />
                     </div>
-                    <div class="card-text">
+                    <div class="card-text step-1">
                         Santa Claus <br />
+                        is coming!
+                    </div>
+                    <div class="card-text step-2">
+                        New Year <br />
                         is coming!
                     </div>
                 </div>
                 <div class="card-footer">
                     <div class="btn-slide">
-                        <button class="btn rounded" type="button"></button>
-                        <button class="btn active rounded" type="button"></button>
-                        <button class="btn rounded" type="button"></button>
+                        <button class="btn-slide-dot btn rounded" type="button"></button>
+                        <button class="btn-slide-dot btn rounded" type="button"></button>
                     </div>
                     <button class="btn btn-next" id="btn-next" type="button">Next</button>
                 </div>

@@ -78,7 +78,7 @@ body {
     }
 }
 
-.card-kv img {
+.card-kv .image-kv.step-1 {
     width: 480px;
     position: absolute;
     top: 50%;
@@ -88,6 +88,13 @@ body {
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+.card-kv .image-kv.step-2 {
+    width: 260px;
+    transform: rotate(40deg);
+    margin-left: -160px;
+    margin-top: -70px;
 }
 
 @keyframes slide {
@@ -135,7 +142,7 @@ body {
     height: 10px;
 }
 
-.btn-slide .btn{
+.btn-slide .btn {
     margin-right: 8px;
 }
 
@@ -148,4 +155,40 @@ body {
     padding: 0 0.5rem;
     margin-right: 1rem;
     color: var(--bg-card);
+}
+
+
+
+/* CARD TEXT LOGIC */
+body.step-2 .card-text.step-2 {
+    display: block;
+}
+
+body.step-2 .card-text.step-1 {
+    display: none;
+}
+
+.card-text.step-2 {
+    display: none;
+}
+
+/* IMAGE KV LOGIC */
+body.step-2 .image-kv.step-2 {
+    opacity: 1;
+    scale: 1;
+    transform-origin: bottom left;
+    transition: scale 1s;
+}
+
+body.step-2 .image-kv.step-1 {
+    display: none;
+}
+
+body.step-2 .card-hidden {
+    display: none;
+}
+
+.image-kv.step-2 {
+    opacity: 0;
+    scale: 0.2;
 }
