@@ -125,6 +125,8 @@ body {
 }
 
 .card-footer {
+    position: relative;
+    z-index: 2;
     display: flex;
     padding: 1rem;
     justify-content: space-between;
@@ -175,10 +177,23 @@ body.step-2 .card-text.step-1 {
 /* IMAGE KV LOGIC */
 body.step-2 .image-kv.step-2 {
     opacity: 1;
-    scale: 1;
+    animation-name: scale-bounce;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.34, 1.72, 0.63, 0.81);
     transform-origin: bottom left;
-    transition: scale 1s;
 }
+
+@keyframes scale-bounce {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
 
 body.step-2 .image-kv.step-1 {
     display: none;
@@ -191,4 +206,51 @@ body.step-2 .card-hidden {
 .image-kv.step-2 {
     opacity: 0;
     scale: 0.2;
+}
+
+/* IMAGE ITEM */
+/* STEP 1 */
+.image-item.step-1.calendar {
+    width: 90px;
+    right: 0;
+    opacity: 1;
+    transform: translate(50%, 50%);
+    position: absolute;
+    transition: opacity 500ms;
+}
+
+.card-hidden-inside {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.image-item.gift-dot {
+    opacity: 0;
+    scale: 0.2;
+}
+body.step-2 .image-item.gift-dot {
+    opacity: 1;
+    position: relative;
+    left: 80%;
+    top: 60%;
+    width: 70px;
+    transform-origin: bottom right;
+    rotate: 15deg;
+    animation-name: scale-bounce;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.34, 1.72, 0.63, 0.81);
+    transform-origin: bottom left;
+}
+
+body.step-2 .step-1 {
+    opacity: 0 !important;
+    transition: none !important;
+}
+
+body:not(.step-2) .step-2 {
+    opacity: 0 !important;
 }
