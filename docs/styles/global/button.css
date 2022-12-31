@@ -28,3 +28,14 @@ button {
     margin-right: 1rem;
     color: var(--bg-card);
 }
+
+.nav-frame {
+    padding: 0;
+    display: flex;
+    border: 10px solid #fffcf0;
+    align-items: center;
+    justify-content: center;
+}
+.nav-frame:not(:first-child) {
+    border-top: 0px;
+}

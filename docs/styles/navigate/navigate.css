@@ -1,3 +1,20 @@
+.navigate {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    overflow: hidden;
+}
+
 .navigate img {
     width: 100px;
+    transition: scale 300ms cubic-bezier(0.34, 1.72, 0.63, 0.81);
+}
+
+.nav-frame {
+    overflow: hidden;
+}
+
+.nav-frame:hover img {
+    scale: 1.2;
 }

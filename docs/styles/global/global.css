@@ -3,6 +3,7 @@
 :root {
     --bg-color: #E5FFEE;
     --bg-card: #3d995c;
+    --cubic-bezier-default: "cubic-bezier(0.34, 1.72, 0.63, 0.81)";
 }
 
 * {
