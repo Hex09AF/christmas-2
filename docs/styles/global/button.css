@@ -1,0 +1,30 @@
+/* BUTTON */
+button {
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 0;
+    border: none;
+}
+
+.btn.rounded {
+    width: 10px;
+    height: 10px;
+}
+
+.btn-slide .btn {
+    margin-right: 8px;
+}
+
+.btn.active {
+    width: 25px;
+    background-color: #fac355;
+}
+
+.btn-next {
+    padding: 0 0.5rem;
+    margin-right: 1rem;
+    color: var(--bg-card);
+}

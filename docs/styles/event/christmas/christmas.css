@@ -1,0 +1,41 @@
+body:not(.christmas) .container.christmas {
+    display: none;
+}
+
+/* HIDDEN CARD HELPER */
+.card-hidden {
+    height: 80vh;
+    width: 360px;
+    background-color: var(--bg-color);
+    position: absolute;
+    z-index: 1;
+    left: -100%;
+
+    animation-name: slide-hidden;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* KV */
+.container.christmas .card-kv .image-kv {
+    width: 480px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-name: slide;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.container.christmas .image-item.calendar {
+    width: 90px;
+    right: 0;
+    opacity: 1;
+    transform: translate(50%, 50%);
+    position: absolute;
+    transition: opacity 500ms;
+}

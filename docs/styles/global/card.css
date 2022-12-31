@@ -1,0 +1,34 @@
+/* CARD */
+.card-wrapper {
+    position: relative;
+}
+.card {
+    border-radius: 28px;
+    overflow: hidden;
+    margin: auto;
+    height: 80vh;
+    width: 360px;
+    background-color: var(--bg-card);
+
+    display: flex;
+    flex-direction: column;
+}
+.card-text {
+    font-size: 4rem;
+    margin-top: auto;
+    line-height: 0.7;
+}
+.card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.card-footer {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}

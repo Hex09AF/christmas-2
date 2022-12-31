@@ -5,46 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>X-mas</title>
+
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+    <!-- RESET -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
+
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="styles/animations/hidden-card.css" />
+    <link rel="stylesheet" href="styles/animations/santa-sleds.css" />
+    <link rel="stylesheet" href="styles/animations/scale.css" />
+
+    <!-- GLOBAL -->
+    <link rel="stylesheet" href="styles/global/button.css" />
+    <link rel="stylesheet" href="styles/global/card.css" />
+    <link rel="stylesheet" href="styles/global/global.css" />
+
+    <!-- EVENT -->
+    <link rel="stylesheet" href="styles/event/new-year/new-year.css" />
+    <link rel="stylesheet" href="styles/event/christmas/christmas.css" />
+
+    <!-- NAVIGATE -->
+    <link rel="stylesheet" href="styles/navigate/navigate.css" />
+
+    <script defer src="scripts/script.js"></script>
+
 </head>
 
-<body id="root">
-    <div class="container">
+<body class="christmas" id="root">
+    <div class="navigate">
+        <img src="./images/frame-christmas.png" loading="lazy" alt="frame christmas" />
+        <img src="./images/frame-new-year.png" loading="lazy" alt="frame new year" />
+    </div>
+
+    <!-- CHRISTMAS -->
+    <div class="container christmas">
         <div class="card-wrapper">
             <div class="card-hidden"></div>
             <div class="card">
+                <div class="card-body">
+                    <div class="card-kv">
+                        <img class="image-kv " src="./images/santa-sleds.png" alt="santa sleds with deer" />
+                        <img class="image-item calendar" src="./images/calendar-25dec.png" alt="25 december" />
+                    </div>
+                    <h2 class="card-text ">
+                        Santa Claus <br />is coming!
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEW YEAR -->
+    <div class="container new-year">
+        <div class="card-wrapper">
+            <div class="card">
                 <div class="card-hidden-inside">
-                    <img class="image-item step-2 gift-dot" src="./images/gift-dot.png" alt="gift" />
+                    <img class="image-item gift-dot" src="./images/gift-dot.png" alt="gift" />
                 </div>
                 <div class="card-body">
                     <div class="card-kv">
-                        <img class="image-kv step-1" src="./images/santa-sleds.png" alt="santa sleds with deer" />
-                        <img class="image-kv step-2" src="./images/two-hands.png" alt="two hands with gift" />
-                        <img class="image-item step-1 calendar" src="./images/calendar-25dec.png" alt="25 december" />
+                        <img class="image-kv" src="./images/two-hands.png" alt="two hands with gift" />
                     </div>
-                    <div class="card-text step-1">
-                        Santa Claus <br />
-                        is coming!
-                    </div>
-                    <div class="card-text step-2">
-                        New Year <br />
-                        is coming!
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <div class="btn-slide">
-                        <button class="btn-slide-dot btn rounded" type="button"></button>
-                        <button class="btn-slide-dot btn rounded" type="button"></button>
-                    </div>
-                    <button class="btn btn-next" id="btn-next" type="button">Next</button>
+                    <h2 class="card-text">
+                        New Year <br /> is coming!
+                    </h2>
                 </div>
             </div>
         </div>

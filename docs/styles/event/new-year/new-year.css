@@ -1,0 +1,41 @@
+body:not(.new-year) .container.new-year {
+    display: none;
+}
+
+.container.new-year .card-kv .image-kv {
+    width: 260px;
+    transform: rotate(40deg);
+    margin-left: -160px;
+    margin-top: -70px;
+}
+
+.container.new-year .image-kv {
+    opacity: 1;
+    animation-name: scale-bounce;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.34, 1.72, 0.63, 0.81);
+    transform-origin: bottom left;
+}
+
+.container.new-year .image-item.gift-dot {
+    opacity: 1;
+    position: relative;
+    left: 80%;
+    top: 60%;
+    width: 70px;
+    transform-origin: bottom right;
+    rotate: 15deg;
+    animation-name: scale-bounce;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.34, 1.72, 0.63, 0.81);
+}
+
+.container.new-year .card-hidden-inside {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
