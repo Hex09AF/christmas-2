@@ -1,0 +1,9 @@
+@keyframes lac {
+    0% {
+        rotate: -30deg;
+    }
+
+    100% {
+        rotate: 30deg;
+    }
+}

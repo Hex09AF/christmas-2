@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="styles/animations/hidden-card.css" />
     <link rel="stylesheet" href="styles/animations/santa-sleds.css" />
     <link rel="stylesheet" href="styles/animations/scale.css" />
+    <link rel="stylesheet" href="styles/animations/lac.css" />
 
 
     <!-- EVENT -->
@@ -37,6 +38,7 @@
 
     <script defer src="scripts/script.js"></script>
     <script defer src="scripts/navigate.js"></script>
+    <script defer src="scripts/snowflake.js"></script>
 </head>
 
 <body class="christmas" id="root">
@@ -56,17 +58,34 @@
         <button type="button" class="nav-frame" disabled>
             Comming soon!
         </button>
+        <button type="button" class="nav-frame" disabled>
+            Comming soon!
+        </button>
+        <button type="button" class="nav-frame" disabled>
+            Comming soon!
+        </button>
     </div>
 
     <!-- CHRISTMAS -->
-    <div class="container christmas">
+    <div class="container christmas" id="christmas-event">
+        <div class="background">
+            <img class="image-bg christmas-tree" src="./images/christmas-tree.png" />
+            <img class="image-bg santa-stuck" src="./images/santa-stuck.png" />
+            <div class="wrap-tuyet-man">
+                <img class="image-bg tuyet-man" src="./images/tuyet.png" />
+            </div>
+            <img class="image-bg angle-leaf" src="./images/leaf-angle.png" />
+        </div>
         <div class="card-wrapper">
-            <div class="card-hidden"></div>
             <div class="card">
+                <div class="card-hidden-inside">
+                    <img class="image-item candy-hand" src="./images/candy-hand.png" alt="candy hand" />
+                </div>
                 <div class="card-body">
                     <div class="card-kv">
                         <img class="image-kv " src="./images/santa-sleds.png" alt="santa sleds with deer" />
                         <img class="image-item calendar" src="./images/calendar-25dec.png" alt="25 december" />
+                        <img class="image-item bell" src="./images/bell.png" alt="bell" />
                     </div>
                     <h2 class="card-text ">
                         Santa Claus <br />is coming!

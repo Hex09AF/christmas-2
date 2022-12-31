@@ -1,13 +1,13 @@
 /* CARD */
 .card-wrapper {
     position: relative;
+    width: 25%;
 }
 .card {
     border-radius: 28px;
     overflow: hidden;
     margin: auto;
     height: 80vh;
-    width: 360px;
     background-color: var(--bg-card);
 
     display: flex;

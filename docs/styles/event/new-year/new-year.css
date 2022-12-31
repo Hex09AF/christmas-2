@@ -32,7 +32,7 @@ body:not(.new-year) .container.new-year {
     animation-timing-function: cubic-bezier(0.34, 1.72, 0.63, 0.81);
 }
 
-.container.new-year .card-hidden-inside {
+.card-hidden-inside {
     height: 100%;
     position: absolute;
     width: 100%;
