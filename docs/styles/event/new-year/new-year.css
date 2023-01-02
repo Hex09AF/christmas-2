@@ -39,3 +39,92 @@ body:not(.new-year) .container.new-year {
     overflow: hidden;
     z-index: 1;
 }
+
+/* IMAGE BG */
+.image-bg {
+    position: absolute;
+    z-index: 2;
+}
+
+.new-year__gift {
+    width: 8%;
+    left: -1%;
+    bottom: 50%;
+    transform: rotate(15deg);
+}
+
+.new-year__fire-work {
+    width: 14%;
+    left: 15%;
+    bottom: 0;
+}
+
+.new-year__santa-fly {
+    width: 11%;
+    top: 10%;
+    left: 15%;
+    transform: translateY(-15%);
+}
+
+.new-year__santa {
+    position: absolute !important;
+    width: 15%;
+    bottom: 0;
+    right: 10%;
+    /* animation: lac 1s ease-in-out infinite alternate;
+    transform-origin: bottom; */
+}
+
+.new-year__hand-gift {
+    width: 15%;
+    position: absolute;
+    right: 50px;
+    top: 20%;
+    transform: rotate(-30deg);
+}
+
+.candy-hand {
+    position: relative;
+    width: 20%;
+    top: 7%;
+    left: -1%;
+}
+
+.bell {
+    width: 30%;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: -7px;
+    transform: translateX(-50%);
+    animation: lac 800ms ease-in-out infinite alternate;
+    transform-origin: top left;
+}
+
+.new-year__gifts {
+    position: relative;
+    width: 20%;
+    top: 7%;
+    left: -25%;
+    transform: rotate(30deg);
+}
+
+.new-year__circle {
+    width: 30%;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: -7px;
+    transform: translateX(-50%);
+    animation: lac 800ms ease-in-out infinite alternate;
+    transform-origin: top left;
+}
+
+.new-year__gifts-side {
+    width: 27%;
+    right: 0;
+    opacity: 1;
+    transform: translate(50%, 50%) rotate(15deg);
+    position: absolute;
+    transition: opacity 500ms;
+}
