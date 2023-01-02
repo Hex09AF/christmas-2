@@ -102,7 +102,7 @@ body:not(.christmas) .container.christmas {
     z-index: 2;
     position: absolute;
     left: 50%;
-    top: -5%;
+    top: -7px;
     transform: translateX(-50%);
     animation: lac 800ms ease-in-out infinite alternate;
     transform-origin: top left;

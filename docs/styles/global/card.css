@@ -2,9 +2,10 @@
 .card-wrapper {
     position: relative;
     width: 25%;
+    min-width: 250px;
 }
 .card {
-    border-radius: 28px;
+    border-radius: 1rem;
     overflow: hidden;
     margin: auto;
     height: 80vh;
