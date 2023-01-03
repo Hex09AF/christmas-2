@@ -1,9 +1,0 @@
-@keyframes scale-bounce {
-    0% {
-        scale: 0;
-    }
-
-    100% {
-        scale: 1;
-    }
-}
